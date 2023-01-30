@@ -50,7 +50,7 @@ public class CustomerManagerEJB {
 
     @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public void createCustomer(String name) throws RemoteException, JMSException {
-        logMessageManager.logCreateCustomer(name);
+        // logMessageManager.logCreateCustomer(name);
 
         Customer c1 = new Customer();
         c1.setName(name);
